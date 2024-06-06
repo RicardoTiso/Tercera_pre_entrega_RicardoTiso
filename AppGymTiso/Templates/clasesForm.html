@@ -1,0 +1,21 @@
+{% extends 'madre.html' %}
+<div style="background-color: rgba(63, 63, 63, 0.788);">
+    {% block contenidoQueCambia %}
+    <!-- en el include le heredo los estilos deestilos_formularios.html -->
+    {% include 'estilos_formularios.html' %}
+        <div class="container-formularios">
+            <h1>REGISTRO DE CLASE</h1>
+        </div>
+        <div class="container-formularios"> 
+
+            <form action="{% url 'clasesForm' %}" method="post">
+                {% csrf_token %}
+                <br>
+                {{miFormulario.as_p}}
+                <br>
+                <button type="submit">Crear</button>
+        
+            </form>
+        </div>
+    {% endblock contenidoQueCambia %}
+</div>

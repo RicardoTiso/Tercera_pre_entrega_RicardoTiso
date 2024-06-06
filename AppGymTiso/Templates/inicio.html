@@ -1,0 +1,49 @@
+{% extends 'padre.html' %}
+
+{% block contenidoQueCambia %}
+    <style>
+        h1 {
+            padding: 10px; 
+            margin: 20px; 
+        }
+        p {
+            padding: 10px; 
+            margin: 20px; 
+        }
+    </style>
+    <h1>--- Tercera pre-entrega+TISO ---</h1>
+
+    <h4>
+        Caracteristicas del Proyecto Creado:
+    </h4>   
+    <br>
+    <h6>- Tenemos un archivo 'modelo.py', donde cree las clases que pienso utilizar hasta el momento:<br>
+        <p>
+            - ClasesAlumnos.<br>
+            --- Cree un formulario 'clasesFormulario'<br>
+            ------- Cree una funcion 'clases_Form' para llamar a ese formulario y cargar los datos en la tabla. <br>
+            <br>
+            Luego creo un HTML para cargar la informacion a traves del formulario y que me devuelva un listado de los alumnos que se registraron a esas clases.
+            <br><br><br>
+
+
+            - RegistroInstructores <br>
+            --- cree un formulario 'registroClasesFormulario'<br>
+            ------- Cree una funcion 'registro_Form' para llamar a ese formulario y cargar los datos en la tabla. <br>
+            <br>
+            Luego creo un HTML para cargar la informacion de las clases que dan los Instructores a traves del formulario y que me devuelva un listado de las clases creadas dentro de los alumnos que se registraron a esas clases.
+            <br><br><br>
+            El resto de las clases las deje para utilizarlas... <br>
+            - Alumnos.<br>
+            - Istructor.<br>
+            - Clases.<br>
+            - Desafios.<br>
+        </p>
+    </h6>
+
+    <br>
+    <p style="color: azure;">{{message}}</p>
+
+
+{% endblock contenidoQueCambia %}
+    

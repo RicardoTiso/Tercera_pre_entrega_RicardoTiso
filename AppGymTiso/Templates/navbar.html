@@ -1,0 +1,24 @@
+<div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+    <div class="navbar-nav mr-auto py-0">
+        <a href="{% url 'Inicio' %}" class="nav-item nav-link active">Inicio</a>
+        <a href="{% url 'registroForm' %}" class="nav-item nav-link">Instructores</a>
+        <a href="{% url 'Alumnos' %}" class="nav-item nav-link">Alumnos</a>
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Clases</a>
+            <div class="dropdown-menu rounded-0 m-0">
+                <a href="{% url 'lista_clases' %}" class="dropdown-item">Proximas clases...</a>
+                <a href="{% url 'clasesForm' %}" class="dropdown-item">Registro</a>
+           </div>
+        </div>
+        <a href="{% url 'Desafios' %}" class="nav-item nav-link">Desafios</a>
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">+ Power</a>
+            <div class="dropdown-menu rounded-0 m-0">
+                <a href="{% url 'masPowerRutinas' %}" class="dropdown-item">Rutinas</a>
+                <a href="{% url 'masPowerNutricion' %}" class="dropdown-item">Nutricion</a>
+                <a href="{% url 'masPowerSeguimiento' %}" class="dropdown-item">Seguimientos en línea</a>
+            </div>
+        </div>
+    </div>
+    <a href="" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">UNETE</a>
+</div>

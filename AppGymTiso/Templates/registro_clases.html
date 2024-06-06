@@ -1,0 +1,28 @@
+<div>
+    <br>   
+    <h1>Listado de Clases</h1>
+    <p style="color: white;">(Los datos que no esten ingresados correctamente NO se tomaran en cuenta por el instructor.)</p>
+    <br>
+    <h5>Los Alumnos deben registrarse por Nombre y Apellido, indicando correctamente la Fecha de la Clase y el numero de la clase correctamente.</h5>
+    <table>
+        <thead>
+            <tr>
+                <th>Instructor</th>
+                <th>Fecha de Clase</th>
+                <th>Clase</th>
+                <th>Detalles de la Clase</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for dato in datos %}
+                <tr>
+                    <td>{{ dato.nombre }} {{ dato.apellido }}</td>
+                    <td>{{ dato.fechaDeClase }}</td>
+                    <td>{{ dato.clase }} - {{ dato.titulo }}</td>
+                    <td>{{ dato.reseña }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
