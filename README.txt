@@ -23,3 +23,5 @@ El resto de las clases las deje para utilizarlas...
 - Desafios.
 
 EJECUTANDO EL SERVIDOR... tiene interfaz amigable... carga de informacion en los botones INSTRUCTORES y CLASES.
+
+Tiene creado un superusuario: cleon (pass:123456)
